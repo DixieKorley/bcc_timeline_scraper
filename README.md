@@ -1,4 +1,5 @@
 # Continent Timeline Exercise
+![Timeline diagram 1 in Power BI](./images/a_timeline_Page_1.png "Number of events in each year")
 
 ## PowerBI, Excel and Python
 
@@ -62,21 +63,22 @@ I resolved the 19 remaining errors manually in Excel, then created a year table 
 ### File Hierarchy
 ```
 ├───data
+│   ├───cleaned_data
 │   └───old_data
-└───old_scripts
-.gitignore
-a_timeline.pbix
-fill_cids.py
-fix_century.py
-fix_missing_links.py
-fix_years.py
-get_all_events.py
-get_links.py
-make_cid.py
-merge_event_cid.py
+├───images
+├───power_bi
+└───scripts
 README.md
 ```
 
 ### Power BI Visuals
 
-_Coming soon_
+![Timeline diagram 1 in Power BI](./images/a_timeline_Page_2.png "Number of events in each year")
+#### This diagram overs the number of events in each year, it has a slicer for the user to view country group, and it has a pike chart for each country. 
+
+![Timeline diagram 2 in Power BI](./images/a_timeline_Page_3.png "Number of events in each country")
+#### This diagram overs the number of events in each country.
+
+### Notes
+
+I did more manual editing on the datasets in Power Query editor, especially in the `EventYear` and `ConvertedYear` columns of the timeline dataset. 
